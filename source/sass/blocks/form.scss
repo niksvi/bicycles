@@ -1,0 +1,89 @@
+.form {
+  width: 327px;
+  justify-self: end;
+
+  @media (max-width: $desktop-width) {
+    justify-self: center;
+    width: 62%;
+    margin: 0 auto;
+    padding: 70px 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (width: $mobile-width) {
+    padding-top: 50px;
+  }
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  @media (max-width: $tablet-width) {
+    row-gap: 18px;
+  }
+}
+
+.form p {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: $white;
+
+  @media (max-width: $desktop-width) {
+    font-size: 18px;
+    color: $black;
+    margin: 0 auto 10px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form input {
+  padding: 14px 30px 10px;
+
+  line-height: 24px;
+  border-radius: 6px;
+  border: 1px solid $border;
+  outline: none;
+  transition: box-shadow 0.2s;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px $accent;
+  }
+}
+
+.form button {
+  padding: 15px;
+
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+
+  border: 0;
+  border-radius: 6px;
+  background-color: $accent;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.3s;
+
+  &:hover,
+  &:focus {
+    background-color: $black;
+    color: $accent;
+  }
+
+  &:active {
+    box-shadow: 0 0 10px $accent;
+  }
+}

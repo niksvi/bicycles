@@ -1,1 +1,15 @@
+
+/// global
+
 @import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./global/normalize.scss";
+@import "./global/veriables.scss";
+
+/// blocks
+
+@import "./blocks/page.scss";
+@import "./blocks/site-nav.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/form.scss";

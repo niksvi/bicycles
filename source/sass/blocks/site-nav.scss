@@ -1,0 +1,149 @@
+.site-nav__toggle {
+  display: none;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.site-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: space-between;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+    background-color: $white;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+}
+
+.site-nav {
+  position: relative;
+  padding: 21px 0 9px;
+  border-bottom: 1px solid rgba($white, 0.2);
+
+  @media (max-width: $desktop-width) {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1;
+
+    min-width: 320px;
+    padding-top: 100px;
+
+    background-color: $white;
+    border-bottom: none;
+
+    &--closed {
+      background-color: transparent;
+    }
+
+    &--closed ul {
+      display: none;
+    }
+
+    &--closed .site-nav__toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 50px;
+      height: 50px;
+
+      background-color: $accent;
+      border: 0;
+    }
+
+    &--closed .site-nav__toggle::before {
+      content: "";
+      position: absolute;
+      top: 11px;
+      right: 10px;
+
+      width: 30px;
+      height: 30px;
+
+      background: url("../img/decor/icon-burger.svg") no-repeat;
+    }
+
+    &--opened .site-nav__toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      display: block;
+      width: 50px;
+      height: 52px;
+
+      background-color: transparent;
+      border: 0;
+      z-index: 2;
+    }
+
+    &--opened .site-nav__toggle::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      right: 17px;
+
+      width: 24px;
+      height: 25px;
+
+      background: url("../img/decor/icon-cross.svg") no-repeat;
+    }
+  }
+}
+
+
+.site-nav__item {
+  padding: 0 20px;
+
+  @media (max-width: $desktop-width) {
+    position: relative;
+    padding: 0;
+    margin: 0 0 30px;
+    background-color: $bg-nav-mob;
+  }
+}
+
+.site-nav__link {
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba($white, 0.7);
+  transition: color 0.2s;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+
+  &:active {
+    color: darken($accent, 10%);
+  }
+
+  @media (max-width: $desktop-width) {
+    display: block;
+    padding: 17px 35px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: $nav-mob;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 23px;
+      right: 25px;
+
+      width: 8px;
+      height: 12px;
+
+      background: url("../img/decor/icon-arrow-right.svg") no-repeat;
+    }
+  }
+}
