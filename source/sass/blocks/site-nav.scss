@@ -17,8 +17,6 @@
   @media (max-width: $desktop-width) {
     display: block;
     background-color: $white;
-    height: 100vh;
-    overflow-y: scroll;
   }
 }
 
@@ -40,7 +38,7 @@
     border-bottom: none;
 
     &--closed {
-      background-color: transparent;
+      padding: 0;
     }
 
     &--closed ul {

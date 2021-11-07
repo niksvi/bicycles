@@ -69,7 +69,6 @@
 }
 
 .site-footer__map iframe {
-  z-index: 1;
   margin: 0 auto;
   width: 66.46%;
   height: 530px;
@@ -86,6 +85,7 @@
 }
 
 .site-footer__map img {
+  z-index: -1;
   display: block;
   margin: 0 auto;
   max-width: 957px;

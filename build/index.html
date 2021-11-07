@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Велосипеды</title>
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -13,6 +17,8 @@
   <header class="main-header main-header--nojs">
     <div class="main-header__wrapper">
       <nav class="site-nav site-nav--closed">
+        <!-- site-nav--opened - Меню открыто
+             site-nav--closed - Меню скрыто -->
         <button class="site-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -21,7 +27,7 @@
             <a class="site-nav__link" href="#about">О нас</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="#">Виды велосипедов</a>
+            <a class="site-nav__link" href="#types">Виды велосипедов</a>
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link" href="#">Видео про велосипеды</a>
@@ -64,6 +70,41 @@
         <li class="about__item">Профессиональные консультации!</li>
       </ul>
     </section>
+    <section class="types" id="types">
+      <h2 class="types__title">Виды велосипедов</h2>
+      <ul class="types__list">
+        <li class="types__item">
+          <h3 class="types__subtitle">Дорожный велосипед</h3>
+          <div class="types__img-box">
+            <picture>
+              <source type="image/webp" srcset="img/content/roads_bike.webp 1x, img/content/roads_bike@2x.webp 2x">
+              <!-- mobile/tablet - 1x: 270px; 2x: 540px; desktop - 1x: 342px; 2x: 684px  -->
+              <img src="img/content/roads_bike.jpg" srcset="img/content/roads_bike@2x.jpg 2x" width="342" height="503" alt="Велосипед с корзинкой на фоне кирпичной стены">
+            </picture>
+          </div>
+        </li>
+        <li class="types__item">
+          <h3 class="types__subtitle">Горный велосипед</h3>
+          <div class="types__img-box">
+            <picture>
+              <source type="image/webp" srcset="img/content/mountains_bike.webp 1x, img/content/mountains_bike@2x.webp 2x">
+              <!-- mobile/tablet - 1x: 270px; 2x: 540px; desktop - 1x: 342px; 2x: 684px  -->
+              <img src="img/content/mountains_bike.jpg" scrset="img/content/mountains_bike@2x.jpg 2x" width="342" height="566" alt="Велосипед с большим протектором шин на фоне гор">
+            </picture>
+          </div>
+        </li>
+        <li class="types__item">
+          <h3 class="types__subtitle">Детский велосипед</h3>
+          <div class="types__img-box">
+            <picture>
+              <source type="image/webp" srcset="img/content/childs_bike.webp 1x, img/content/childs_bike@2x.webp 2x">
+              <!-- mobile/tablet - 1x: 270px; 2x: 540px; desktop - 1x: 342px; 2x: 684px  -->
+              <img src="img/content/childs_bike.jpg" srcset="img/content/childs_bike@2x.jpg 2x" width="342" height="513" alt="Розовый велосипед с корзинкой и багажником">
+            </picture>
+          </div>
+        </li>
+      </ul>
+    </section>
   </main>
   <footer class="site-footer" id="contacts">
     <h2 class="site-footer__title">Как нас найти?</h2>
@@ -73,6 +114,7 @@
       </iframe>
       <picture>
         <source type="image/webp" srcset="img/content/map.webp 1x, img/content/map@2x.webp 2x">
+        <!-- mobile - 1x: 320px; 2x: 640px; tablet - 1x: 698px; 2x: 1396px; desktop - 1x: 957px; 2x: 1914px  -->
         <img src="img/content/map.png" srcset="img/content/map@2x.png 2x" width="957" height="530" loading="lazy" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19">
       </picture>
     </div>
@@ -95,7 +137,7 @@
       </li>
     </ul>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -6,4 +6,6 @@
   font-size: 15px;
   line-height: 24px;
   color: $black;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
