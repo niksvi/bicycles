@@ -18,14 +18,12 @@ function scrollTo() {
       const blockID = link.getAttribute('href').substr(1);
       if (mainNav.classList.contains('site-nav--opened')) {
         closeMenu();
-       }
+      }
       document.getElementById(blockID).scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
-
-
-     })
+    })
   }
 }
 
