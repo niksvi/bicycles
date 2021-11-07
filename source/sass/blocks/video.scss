@@ -5,13 +5,13 @@
   padding-top: 120px;
   margin-bottom: 144px;
   text-align: center;
-  background-image: linear-gradient(to top, transparent 98px, $bg-video 98px);
+  background-image: linear-gradient(to top, transparent 106px, $bg-video 106px);
 
   @media (max-width: $desktop-width) {
     padding-top: 70px;
     margin-bottom: 64px;
 
-    background-image: linear-gradient(to top, transparent 85px, $bg-video 85px);
+    background-image: linear-gradient(to top, transparent 94px, $bg-video 94px);
   }
 
   @media (max-width: $tablet-width) {
@@ -71,7 +71,7 @@
 .video__button {
   position: absolute;
   top: 43%;
-  left: 47%;
+  left: 46.5%;
   display: flex;
   justify-content: center;
   align-items: center;

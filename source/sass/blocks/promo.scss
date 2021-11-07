@@ -40,7 +40,7 @@
   width: 100%;
   max-width: calc(880px + 32px * 2);
   margin: 0 auto;
-  padding: 323px 32px 100px;
+  padding: 318px 32px 100px;
   box-sizing: border-box;
 
   @media (max-width: $desktop-width) {
@@ -115,11 +115,11 @@
 }
 
 .promo__img img {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   @media (max-width: $desktop-width) {
     position: absolute;
-    top: 23px;
+    top: 25px;
     left: 22px;
 
     margin: 0;

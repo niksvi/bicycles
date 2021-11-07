@@ -70,7 +70,7 @@
 
 .site-footer__map iframe {
   margin: 0 auto;
-  width: 66.46%;
+  width: 63%;
   height: 530px;
 
   @media (max-width: $desktop-width) {
@@ -89,7 +89,7 @@
   display: block;
   margin: 0 auto;
   max-width: 957px;
-  width: 66.46%;
+  width: 63%;
   height: 530px;
   object-fit: cover;
 
@@ -115,8 +115,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-width: 480px;
-  max-width: 550px;
+  min-width: 490px;
+  max-width: 560px;
   width: 38%;
   margin: 0 auto;
 
@@ -129,13 +129,13 @@
     min-width: 320px;
     justify-content: center;
     width: 100%;
-    row-gap: 22px;
+    row-gap: 23px;
   }
 }
 
 .site-footer__item svg {
   vertical-align: middle;
-  margin-right: 15px;
+  margin-right: 10px;
   fill: none;
 }
 
@@ -144,6 +144,7 @@
   line-height: 32px;
   color: rgba($black, 0.5);
   transition: color 0.2s;
+  margin-right: 15px;
 
   @media (max-width: $desktop-width) {
     line-height: 22px;

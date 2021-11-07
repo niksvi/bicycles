@@ -1,6 +1,7 @@
 .form {
   width: 327px;
   justify-self: end;
+  padding-top: 5px;
 
   @media (max-width: $desktop-width) {
     justify-self: center;
@@ -21,7 +22,7 @@
 .form form {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 18px;
 
   @media (max-width: $tablet-width) {
     row-gap: 18px;
@@ -50,13 +51,17 @@
 }
 
 .form input {
-  padding: 14px 30px 10px;
+  padding: 15px 30px 10px;
   cursor: pointer;
   line-height: 24px;
   border-radius: 6px;
   border: 1px solid $border;
   outline: none;
   transition: box-shadow 0.2s;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 25px;
+  }
 
   &:hover,
   &:focus {
