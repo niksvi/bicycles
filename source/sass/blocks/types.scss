@@ -14,7 +14,7 @@
   }
 }
 
-.types__title {
+.types h2 {
   margin: 0 0 51px;
   font-weight: 600;
   font-size: 30px;
@@ -28,7 +28,7 @@
   }
 }
 
-.types__subtitle {
+.types__list h3 {
   margin: 15px 0 0;
   font-weight: 600;
   font-size: 22px;
@@ -64,7 +64,7 @@
   }
 }
 
-.types__item {
+.types__list li {
   display: flex;
   position: relative;
   flex-direction: column;

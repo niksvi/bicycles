@@ -12,7 +12,7 @@
   }
 }
 
-.site-footer__title {
+.site-footer h2 {
   margin: 0 0 30px;
 
   font-weight: 600;
@@ -31,7 +31,7 @@
   }
 }
 
-.site-footer__address {
+.site-footer p {
   max-width: 555px;
   width: 38.54%;
   margin: 0 auto 42px;
@@ -133,13 +133,13 @@
   }
 }
 
-.site-footer__item svg {
+.site-footer__list svg {
   vertical-align: middle;
   margin-right: 10px;
   fill: none;
 }
 
-.site-footer__link {
+.site-footer__list a {
   font-size: 16px;
   line-height: 32px;
   color: rgba($black, 0.5);

@@ -20,7 +20,7 @@
   }
 }
 
-.video__title {
+.video h2 {
   margin: 0 0 20px;
   font-weight: 600;
   font-size: 30px;
@@ -32,7 +32,7 @@
   }
 }
 
-.video__text {
+.video p {
   max-width: 340px;
   margin: 0 auto 56px;
   font-weight: 300;
@@ -48,7 +48,7 @@
   @media (max-width: $tablet-width) {
     max-width: 288px;
     margin-bottom: 52px;
-    letter-spacing: -0.005em;
+    letter-spacing: -0.01em;
   }
 }
 

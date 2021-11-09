@@ -9,3 +9,13 @@
   display: grid;
   grid-template-rows: 1fr auto;
 }
+
+.page--opened-menu {
+  main {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+}
