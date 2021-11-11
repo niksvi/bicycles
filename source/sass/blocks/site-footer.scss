@@ -70,8 +70,9 @@
 
 .site-footer__map iframe {
   margin: 0 auto;
-  width: 63%;
+  width: 67%;
   height: 530px;
+  max-width: 957px;
 
   @media (max-width: $desktop-width) {
     width: 90.89%;
@@ -112,24 +113,40 @@
 .site-footer__list {
   list-style: none;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
+  padding-left: 80px;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: center;
   flex-wrap: wrap;
   min-width: 490px;
-  max-width: 560px;
-  width: 38%;
+  max-width: 957px;
   margin: 0 auto;
 
   @media (max-width: $desktop-width) {
-    width: 72.66%;
     max-width: 558px;
   }
 
   @media (max-width: $tablet-width) {
     min-width: 320px;
-    justify-content: center;
     width: 100%;
-    row-gap: 23px;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
+.site-footer__list li {
+  &:nth-child(2n+1) {
+    margin-right: 75px;
+
+    @media (max-width: $tablet-width) {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 15px;
+    margin-left: 20px;
   }
 }
 
