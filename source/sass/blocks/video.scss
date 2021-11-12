@@ -9,14 +9,14 @@
 
   @media (max-width: $desktop-width) {
     padding-top: 70px;
-    margin-bottom: 64px;
-
+    margin-bottom: 61px;
     background-image: linear-gradient(to top, transparent 94px, $bg-video 94px);
   }
 
   @media (max-width: $tablet-width) {
     background-image: linear-gradient(to top, transparent 54px, $bg-video 54px);
     padding-top: 84px;
+    margin-bottom: 62px;
   }
 }
 
@@ -91,9 +91,9 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 65px;
-    height: 65px;
-    top: 30%;
+    width: 22%;
+    height: 38%;
+    top: 29%;
     left: 39%;
   }
 

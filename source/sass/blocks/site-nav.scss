@@ -22,7 +22,7 @@
 
 .site-nav {
   position: relative;
-  padding: 21px 0 9px;
+  padding: 22px 0 9px;
   border-bottom: 1px solid rgba($white, 0.2);
 
   @media (max-width: $desktop-width) {
@@ -111,6 +111,7 @@
 
 .site-nav__list a {
   font-size: 16px;
+  font-weight: 300;
   line-height: 32px;
   color: rgba($white, 0.7);
   transition: color 0.2s;

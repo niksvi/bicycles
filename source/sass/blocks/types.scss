@@ -58,9 +58,9 @@
   }
 
   @media (max-width: $tablet-width) {
-    display: block;
     max-width: 470px;
     width: 85%;
+    row-gap: 0;
   }
 }
 
