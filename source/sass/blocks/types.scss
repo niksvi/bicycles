@@ -173,8 +173,9 @@
 }
 
 .types__img-box img {
+  border-radius: 10px;
+
   @media (max-width: $desktop-width) {
-    border-radius: 10px;
     height: 300px;
     max-width: 270px;
   }

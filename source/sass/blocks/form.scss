@@ -22,16 +22,11 @@
 .form form {
   display: flex;
   flex-direction: column;
-  row-gap: 18px;
-
-  @media (max-width: $tablet-width) {
-    row-gap: 18px;
-  }
 }
 
 .form p {
   margin: 0;
-
+  margin-bottom: 18px;
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
@@ -42,11 +37,11 @@
   @media (max-width: $desktop-width) {
     font-size: 18px;
     color: $black;
-    margin: 0 auto 10px;
+    margin: 0 auto 28px;
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 18px;
   }
 }
 
@@ -58,9 +53,10 @@
   border: 1px solid $border;
   outline: none;
   transition: box-shadow 0.2s;
+  margin-bottom: 18px;
 
   @media (max-width: $desktop-width) {
-    padding: 15px 20px 10px;
+    padding: 14px 22px 10px;
   }
 
   @media (max-width: $tablet-width) {
