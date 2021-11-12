@@ -4,7 +4,7 @@
   "description": "Стартовый шаблон сборки Лиги А",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "9.5.x",
+    "autoprefixer": "9.8.6",
     "browser-sync": "2.26.x",
     "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
